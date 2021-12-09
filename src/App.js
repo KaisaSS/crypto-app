@@ -1,6 +1,6 @@
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-import { Layout, Typography, Space } from "antd";
-import { Navbar, Homepage, Exchanges, Cryptocurrencies, CryptoDetails, News } from "./components";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Layout } from "antd";
+import { Navbar, Homepage, Exchanges, Cryptocurrencies, CryptoDetails, News, Footer } from "./components";
 import "./App.css";
 
 const App = () => {
@@ -22,8 +22,11 @@ const App = () => {
               </Switch>
             </div>
           </Layout>
+
+          <div className="footer">
+            <Footer />
+          </div>
         </div>
-        <div className="footer"></div>
       </div>
     </BrowserRouter>
   );
