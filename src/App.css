@@ -1,0 +1,135 @@
+:root {
+  --textPrimary: #000;
+  --bgPrimary: #fff;
+  --bgSecondary: #f9f9f9;
+  --pink: #0071bd;
+  --lightBlue: #e6f7ff;
+  --border: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: var(--pink);
+}
+
+.app {
+  display: flex;
+  overflow: hidden;
+}
+
+.navbar {
+  flex: 0.2;
+}
+
+.main {
+  flex: 0.8;
+  width: 100%;
+}
+
+.routes {
+  padding: 20px;
+}
+
+.nav-container {
+  position: fixed;
+  left: 0%;
+  height: 100vh;
+  background: rgb(0, 21, 41);
+}
+
+.logo-container {
+  background: #001529;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 15px;
+}
+
+.logo a {
+  color: white;
+}
+
+.menu-control-container {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  font-size: 1.2rem;
+  background-color: var(--bgSecondary);
+  border: none;
+}
+
+.loader {
+  height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .main {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .main {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .navbar {
+    flex: 1;
+  }
+
+  .main {
+    flex: 1;
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .nav-container {
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--bgSecondary);
+  }
+
+  .menu-control-container {
+    display: block;
+  }
+
+  .ant-menu {
+    position: absolute;
+    right: 0px;
+  }
+  .home-title {
+    font-size: 1.4rem;
+  }
+  .show-more {
+    font-size: 1.3rem;
+  }
+}
