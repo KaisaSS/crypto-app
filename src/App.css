@@ -155,6 +155,38 @@ a:hover {
   width: 250px;
 }
 
+.select-news {
+  width: 180px;
+}
+
+.news-card {
+  min-height: 300px;
+}
+
+.news-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-title {
+  width: 70%;
+}
+
+.news-card p {
+  color: black;
+  margin: 10px 0px;
+}
+
+.provider-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.provider-name {
+  margin-left: 10px;
+}
+
 .footer {
   background-color: #001529;
   display: flex;
