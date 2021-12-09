@@ -99,9 +99,7 @@ a:hover {
 
   .main {
     flex: 1;
-    margin-top: 90px;
-    margin-left: 0px;
-    margin-right: 10px;
+    margin: 90px 10px 0 0;
   }
 
   .nav-container {
@@ -109,7 +107,8 @@ a:hover {
     position: fixed;
     width: 100%;
     z-index: 100;
-    background-color: var(--bgSecondary);
+    top: 0;
+    background: var(--bgSecondary);
   }
 
   .menu-control-container {

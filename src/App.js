@@ -22,7 +22,6 @@ const App = () => {
               </Switch>
             </div>
           </Layout>
-
           <div className="footer">
             <Footer />
           </div>
