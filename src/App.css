@@ -130,11 +130,24 @@ a:hover {
 .crypto-stats {
   margin: 5px;
   padding: 5px;
-  border: 1px solid black;
-
+  border: 2px solid black;
   border-radius: 20px;
   background: white;
   text-align: center;
+}
+
+.crypto-card-container {
+  min-height: 65vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.crypto-card {
+  min-width: 300px;
+}
+
+.crypto-card .crypto-image {
+  width: 35px;
 }
 
 .footer {
