@@ -150,6 +150,11 @@ a:hover {
   width: 35px;
 }
 
+.search-crypto {
+  margin: 20px auto 30px;
+  width: 250px;
+}
+
 .footer {
   background-color: #001529;
   display: flex;
