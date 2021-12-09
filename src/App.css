@@ -33,6 +33,7 @@ a:hover {
 
 .routes {
   padding: 20px;
+  margin-left: 330px;
 }
 
 .nav-container {
@@ -75,18 +76,6 @@ a:hover {
   align-items: center;
 }
 
-@media screen and (max-width: 1300px) {
-  .main {
-    margin-left: 50px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .main {
-    margin-left: 100px;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .app {
     flex-direction: column;
@@ -100,6 +89,10 @@ a:hover {
   .main {
     flex: 1;
     margin: 90px 10px 0 0;
+  }
+
+  .routes {
+    margin: 0;
   }
 
   .nav-container {
@@ -125,6 +118,23 @@ a:hover {
   .show-more {
     font-size: 1.3rem;
   }
+}
+
+.home-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.crypto-stats {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+
+  border-radius: 20px;
+  background: white;
+  text-align: center;
 }
 
 .footer {
