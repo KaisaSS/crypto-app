@@ -159,10 +159,6 @@ a:hover {
   width: 180px;
 }
 
-.news-card {
-  min-height: 300px;
-}
-
 .news-image-container {
   display: flex;
   justify-content: space-between;
@@ -176,6 +172,11 @@ a:hover {
 .news-card p {
   color: black;
   margin: 10px 0px;
+}
+
+.news-card img {
+  margin-left: 10px;
+  border-radius: 5px;
 }
 
 .provider-container {
