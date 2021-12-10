@@ -215,15 +215,24 @@ a:hover {
 
 .stats-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 40px;
+}
+
+.coin-value-statistics,
+.other-stats-info {
+  width: 385px;
 }
 
 .coin-details-heading {
   font-weight: 700 !important;
   margin-top: 20px !important;
   color: var(--blue) !important;
+}
+
+.coin-value-statistics {
+  margin-top: 60px;
 }
 
 .coin-stats {
@@ -321,6 +330,37 @@ a:hover {
   .coin-detail-container {
     margin: 0;
   }
+}
+
+.chart-header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-title {
+  color: #0071bd !important;
+}
+
+.price-container {
+  display: flex !important;
+  gap: 20px !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+
+.price-change {
+  font-weight: 900 !important;
+}
+
+.current-price {
+  margin-top: 0px !important;
+  font-weight: 900 !important;
+}
+
+.select-timeperiod {
+  width: 200px !important;
+  margin-top: 20px !important;
 }
 
 .footer {

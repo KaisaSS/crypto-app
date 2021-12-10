@@ -4,6 +4,8 @@ import { Button, Menu, Typography, Avatar } from "antd";
 import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from "@ant-design/icons";
 import icon from "../images/logo.png";
 
+const { Item } = Menu;
+
 const Navbar = () => {
   return (
     <div className="nav-container">
@@ -12,21 +14,23 @@ const Navbar = () => {
         <Typography.Title level={2} className="logo">
           <Link to="/">CryptoCurr</Link>
         </Typography.Title>
-        <Button className="menu-control-container">button</Button>
+        <Button className="menu-control-container">
+          <MenuOutlined />
+        </Button>
       </div>
       <Menu theme="dark">
-        <Menu.Item icon={<HomeOutlined />}>
+        <Item key="home" icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
-        </Menu.Item>
-        <Menu.Item icon={<FundOutlined />}>
+        </Item>
+        <Item key="cryptocurrencies" icon={<FundOutlined />}>
           <Link to="/cryptocurrencies">Cryptocurrencies</Link>
-        </Menu.Item>
-        <Menu.Item icon={<MoneyCollectOutlined />}>
+        </Item>
+        <Item key="exchanges" icon={<MoneyCollectOutlined />}>
           <Link to="/exchanges">Exchanges</Link>
-        </Menu.Item>
-        <Menu.Item icon={<BulbOutlined />}>
+        </Item>
+        <Item key="news" icon={<BulbOutlined />}>
           <Link to="/news">News</Link>
-        </Menu.Item>
+        </Item>
       </Menu>
     </div>
   );
