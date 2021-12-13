@@ -395,3 +395,26 @@ a:hover {
   padding: 20px;
   align-items: center;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.loading::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border: 10px solid #ddd;
+  border-radius: 50%;
+  border-top-color: var(--blue);
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}

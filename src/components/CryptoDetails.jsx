@@ -15,7 +15,7 @@ import {
   ThunderboltOutlined,
 } from "@ant-design/icons";
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from "../services/cryptoApi";
-import LineChart from "./LineChart";
+import { LineChart, Loading } from "../components/";
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -26,7 +26,7 @@ const CryptoDetails = () => {
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
   const { data: coinHistory } = useGetCryptoHistoryQuery({ coinId, timePeriod });
 
-  if (isFetching) return "Loading...";
+  if (isFetching) return <Loading />;
 
   const cryptoDetails = data?.data?.coin;
   const time = ["24h", "7d", "30d", "1y", "5y"];
