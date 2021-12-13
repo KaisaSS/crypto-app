@@ -39,7 +39,7 @@ const Navbar = () => {
         )}
       </div>
       {activeMenu && (
-        <Menu theme="dark" onClick={() => setActiveMenu(false)}>
+        <Menu theme="dark" onClick={() => setActiveMenu(true)}>
           <Item key="home" icon={<HomeOutlined />}>
             <Link to="/">Home</Link>
           </Item>
