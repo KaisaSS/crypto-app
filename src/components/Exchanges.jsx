@@ -31,40 +31,44 @@ const Exchanges = () => {
         </Col>
       </Row>
       <Row className="exchange-row">
-        {exchangeList.map((exchange) => (
-          <Col span={24}>
-            <Collapse>
-              <Panel
-                key={exchange.id}
-                showArrow={false}
-                header={
-                  <Row key={exchange.id} className="exchange-row">
-                    <Col span={6} className="exchange-item-first">
-                      <Text>
-                        <strong>{exchange.rank}.</strong>
-                      </Text>
-                      <Avatar className="exchange-image" src={exchange.iconUrl} />
-                      <Text>
-                        <strong>{exchange.name}</strong>
-                      </Text>
-                    </Col>
-                    <Col span={6} className="exchange-item">
-                      ${millify(exchange.volume)}
-                    </Col>
-                    <Col span={6} className="exchange-item">
-                      {millify(exchange.numberOfMarkets)}
-                    </Col>
-                    <Col span={6} className="exchange-item">
-                      {millify(exchange.marketShare)}%
-                    </Col>
-                  </Row>
-                }
-              >
-                {HTMLReactParser(exchange.description || "")}
-              </Panel>
-            </Collapse>
-          </Col>
-        ))}
+        {exchangeList ? (
+          exchangeList.map((exchange) => (
+            <Col span={24}>
+              <Collapse>
+                <Panel
+                  key={exchange.id}
+                  showArrow={false}
+                  header={
+                    <Row key={exchange.id} className="exchange-row">
+                      <Col span={6} className="exchange-item-first">
+                        <Text>
+                          <strong>{exchange.rank}.</strong>
+                        </Text>
+                        <Avatar className="exchange-image" src={exchange.iconUrl} />
+                        <Text>
+                          <strong>{exchange.name}</strong>
+                        </Text>
+                      </Col>
+                      <Col span={6} className="exchange-item">
+                        ${millify(exchange.volume)}
+                      </Col>
+                      <Col span={6} className="exchange-item">
+                        {millify(exchange.numberOfMarkets)}
+                      </Col>
+                      <Col span={6} className="exchange-item">
+                        {millify(exchange.marketShare)}%
+                      </Col>
+                    </Row>
+                  }
+                >
+                  {HTMLReactParser(exchange.description || "")}
+                </Panel>
+              </Collapse>
+            </Col>
+          ))
+        ) : (
+          <div>ERROR</div>
+        )}
       </Row>
     </>
   );

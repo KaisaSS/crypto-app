@@ -170,9 +170,14 @@ a:hover {
   width: 70%;
 }
 
+.news-card {
+  height: 330px;
+}
+
 .news-card p {
+  padding-top: 10px;
   color: black;
-  margin: 10px 0px;
+  margin: 0 10px;
 }
 
 .news-card img {
@@ -181,8 +186,12 @@ a:hover {
 }
 
 .provider-container {
+  width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  bottom: 10px;
 }
 
 .provider-name {
